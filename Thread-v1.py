@@ -98,7 +98,7 @@ def myThread(q, q1, lock, header):
             lock.acquire()  # 锁住
             data.append(info)
             lock.release()  # 释放
-            # get_p(u + "comments", order, lock, header) # 这是获取图片的
+            # get_p(u + "comments", order, lock, header) # 这是获取图片的,需要照片的可以去掉注释，建议用多进程版本的
             print("第", order)
 
         else:
